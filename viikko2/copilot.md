@@ -2,7 +2,7 @@
 
 ## Logiikka
 
-En ole juuri käyttänyt agentteja ennen ja tehnyt pääosin käsin.
+En ole juuri käyttänyt agentteja ennen   ja tehnyt pääosin käsin.
 Joukkueen perusteella suodatetun pelaajien listan lueteltuna pisteidentekijöiden mukaan agentti suoritti mutkattomasti. Ongelmia syntyi kun pyydettiin integroimaan mainiin. Joukkueiden tulostus oli rikki ja agentti yritti lisätä joukkueita settiin joka oli määritelty silmukan sisällä eli muuttuja oli lokaali ja pyyhkyityi joka loopilla.
 
 VS coden autofill ehdotukset usein aika kauheita ja häiritseviä.
