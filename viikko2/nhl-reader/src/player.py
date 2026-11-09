@@ -11,8 +11,6 @@ class Player:
     def __str__(self):
         return f"{self.name:22}{self.teams:16}{self.goals} + {self.assists} = {self.points}"
 
-
-
 class PlayerStats:
     def __init__(self, players):
         self.players = players
@@ -21,4 +19,3 @@ class PlayerStats:
         players_by_nationality = list(filter(lambda player: player.nationality == nationality, self.players))
         players = sorted(players_by_nationality, key = lambda player: player.points, reverse = True)
         return players
-        
