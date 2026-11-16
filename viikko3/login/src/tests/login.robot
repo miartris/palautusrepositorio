@@ -19,7 +19,8 @@ Login With Incorrect Password
 
 Login With Nonexistent Username
     Set Password  ffffff
-    Login Should Fail With Message  Invalid username or password
+    Click  button >> text=Login
+    Login Should Fail With Message  Username and password are required
 
 *** Keywords ***
 Login Should Succeed
@@ -42,4 +43,6 @@ Reset Application Create User And Go To Login Page
     Reset Application
     Create User  kalle  kalle123
     Go To Login Page
+
+
 

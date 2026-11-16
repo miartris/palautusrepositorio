@@ -8,6 +8,7 @@ ${DELAY}         500ms
 ${HOME_URL}      http://${SERVER}
 ${LOGIN_URL}     http://${SERVER}/login
 ${REGISTER_URL}  http://${SERVER}/register
+${WELCOME_URL}   http://{SERVER}/welcome
 ${BROWSER}       chromium
 ${HEADLESS}      false
 
@@ -21,12 +22,17 @@ Open And Configure Browser
     New Context
     New Page  about:blank
 
+Starting Page Should Be Open
+    Get Title  ==  "Ohtu Application"
+
 Login Page Should Be Open
     Get Title  ==  Login
 
 Register Page Should Be Open
     Get Title  ==  Register
 
+Welcome Page Should Be Open
+    Get Title == "Welcome to Ohtu Application!"
 Main Page Should Be Open
     Get Title  ==  Ohtu Application main page
 
@@ -38,4 +44,6 @@ Go To Starting Page
 
 Go To Register Page
     Go To  ${REGISTER_URL}
+
+
 
