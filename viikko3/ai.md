@@ -1,0 +1,5 @@
+# AI Käyttö
+
+Käytetty malli github copilot. Delegoi tehtävän GPT Luna 6.0 mallille. Huomionarvoista oli, että /init komennon yhteydessä kutsui mallia MAI-code 1.1 Flash, eli ainakin eri tehtävien pellin alla käytetyt mallit erosivat. Itse toiminnallisuuden toteutuksesta malli selvisi yhdellä komennolla eli ns one shottasi. Käytetty prompti oli 
+"I need you to add a check to validate passwords so that passwords that consist of only letters be it lowercase, uppercase or a mix are not accepted. In other words passwords must include numbers or special characters. Additionally if a user tries to register with a password of only letters he needs to be shown an error message. First code robot tests (that should fail) that detail the acceptance criteria, after that implement the functionality in code". 
+Agentti muokkasi ainoastaan register robottia ja userserviceä jonne se lisäsi hyvin ytimekkään tarkistuksen sille, että salasana ei sisällä vain kirjaimia käyttäen funktioita isalpha(). Agentin muutosten oikeellisuudesta oli siis helppo vakuuttua koska ne olivat helposti ymmärrettäviä ja agentti lisäsi koodia oikeasti lähes minimaalisen määrän.
